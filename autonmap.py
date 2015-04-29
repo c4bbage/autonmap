@@ -16,7 +16,7 @@ class scanopt(threading.Thread):
         self.timeout = 600 
         self.lock = threading.Lock() 
         self.portscan=nmap.PortScanner()  
-        self.ports='21,22,23,25,80,163,443,873,1433,1434,3306,3389,6050,8000,8080,8888,27017,11211'
+        self.ports='21,22,23,25,80,163,443,873,1433,1434,3306,3389,6379,6050,8000,8080,8888,9200,27017,11211'
         self.ret={}
 
     def run(self): 
